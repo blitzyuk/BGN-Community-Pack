@@ -1,7 +1,6 @@
 name: 'Bug Report'
 labels:
   - 'Bug'
-type: 'Bug'
 description: 'Report an issue with the modpack. ONE ISSUE PER REPORT'
 body:
   - type: 'markdown'

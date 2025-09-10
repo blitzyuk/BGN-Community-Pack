@@ -1,4 +1,5 @@
 name: 'Suggestion'
+title: '[Feature]: '
 description: 'Suggestion'
 labels:
   - 'Enhancement'

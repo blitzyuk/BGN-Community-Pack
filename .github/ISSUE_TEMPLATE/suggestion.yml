@@ -2,7 +2,6 @@ name: 'Suggestion'
 description: 'Suggestion'
 labels:
   - 'Enhancement'
-type: 'Feature'
 body:
   - type: 'textarea'
     id: 'problem'

@@ -1,0 +1,103 @@
+name: 'Bug Report'
+labels:
+  - 'Bug'
+type: 'Bug'
+description: 'Report an issue with the modpack. ONE ISSUE PER REPORT'
+body:
+  - type: 'markdown'
+    attributes:
+      value: '### Before filling out this report, please read the following
+
+        - If you are having issues with a specific mod, we recommend
+        reporting the issue directly to the mod author
+        
+        - Only 1 issue per bug report, if you need to report multiple issues, open multiple bug reports
+        
+        - Checked if the issue still exists on the latest version of the modpack
+        
+        - If you have modified the pack, check if the issue exists on a
+        clean/fresh install of the modpack
+
+        ---'
+  - type: 'input'
+    id: 'version'
+    attributes:
+      label: 'Modpack version'
+      placeholder: 'ex. 1.1.0'
+    validations:
+      required: true
+  - type: 'dropdown'
+    id: 'launcher'
+    attributes:
+      label: 'Launcher'
+      description: 'Which launcher are you using to start the modpack?, If other
+        please mention the launcher you use in additional information'
+      options:
+        - 'Please select an option...'
+        - 'FTB App'
+        - 'CurseForge'
+        - 'Prism'
+        - 'ATLauncher'
+        - 'Server'
+        - 'Other...'
+    validations:
+      required: true
+  - type: 'textarea'
+    id: 'bugdesc'
+    attributes:
+      label: 'Describe the bug'
+      description: 'A clear and concise description of what the bug is along with any
+        screenshots that can help explain the issue'
+    validations:
+      required: true
+  - type: 'textarea'
+    id: 'reproduce'
+    attributes:
+      label: 'Steps to reproduce'
+      description: 'Tell us how we can reproduce the issue'
+      placeholder: '1. Go to ...
+
+        2. Click on ...
+
+        3. Scroll down to ...
+
+        4. See error
+
+        '
+    validations:
+      required: true
+  - type: 'textarea'
+    id: 'logs'
+    attributes:
+      label: 'Log Files'
+      description: 'Link(s) to any log files that may help debug your issue'
+      placeholder: 'Please upload your logs to a pastebin service such as
+        [Gist](https://gist.github.com/), [mclo.gs](https://mclo.gs/) and
+        link them here. If you are not sure which logs to upload, please upload the
+        debug.log file from the modpack folder.'
+  - type: 'input'
+    id: 'expectedBehaviour'
+    attributes:
+      label: 'Expected behaviour'
+      description: 'A clear and concise description of what you expected to happen.'
+    validations:
+      required: true
+  - type: 'dropdown'
+    id: 'modded-dropdown'
+    attributes:
+      label: 'Has the pack been modified'
+      description: 'Have you modified the modpack in any way? This includes changing
+        configs, adding mods and/or updating any mods'
+      options:
+        - 'Please select an option...'
+        - 'Yes'
+        - 'No'
+    validations:
+      required: true
+  - type: 'textarea'
+    id: 'additional'
+    attributes:
+      label: 'Additional information'
+      description: 'Any other information that can help with debugging the issue'
+      placeholder: 'Any other information that may help debug the issue. If you have
+        modified the modpack please let us know what was changed here'

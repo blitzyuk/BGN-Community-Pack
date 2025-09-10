@@ -1,4 +1,5 @@
 name: 'Bug Report'
+title: '[Bug]: '
 labels:
   - 'Bug'
 description: 'Report an issue with the modpack. ONE ISSUE PER REPORT'
